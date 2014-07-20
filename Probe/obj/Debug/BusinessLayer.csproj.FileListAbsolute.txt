@@ -1,0 +1,7 @@
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\BusinessLayer.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\BusinessLayer.pdb
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\DAL.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\DAL.pdb
+D:\C#\projects\ShopGallery\ShopGallery\Probe\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+D:\C#\projects\ShopGallery\ShopGallery\Probe\obj\Debug\BusinessLayer.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\obj\Debug\BusinessLayer.pdb

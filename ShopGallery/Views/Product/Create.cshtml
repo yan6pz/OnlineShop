@@ -1,0 +1,140 @@
+﻿@model ShopGallery.Models.Product
+
+@{
+    ViewBag.Title = "CreateProduct";
+}
+
+<h2>CreateProduct</h2>
+
+ 
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data", id = "frm_profile" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Product</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Color)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Color)
+            @Html.ValidationMessageFor(model => model.Color)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UnitPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UnitPrice)
+            @Html.ValidationMessageFor(model => model.UnitPrice)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Size)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Size)
+            @Html.ValidationMessageFor(model => model.Size)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Weight)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Weight)
+            @Html.ValidationMessageFor(model => model.Weight)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsDiscounted)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsDiscounted)
+            @Html.ValidationMessageFor(model => model.IsDiscounted)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SubcategoryID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SubcategoryID)
+            @Html.ValidationMessageFor(model => model.SubcategoryID)
+        </div>
+          <div>
+        @Html.TextBoxFor(model => model.Image, new {type = "file", id="file"})
+    </div>
+
+        <p>
+            <input type="button" id="formSubmit" value="Save"/>
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Show","Product")
+</div>
+
+<script type="text/javascript">
+//    $('#formSubmit').on('click', function () {
+
+//        var form = $('#frm_profile');
+//        debugger;
+//        if (form.valid()) {
+//            $(this).attr('disabled', "disabled");
+
+//            var data = $('#frm_profile').serialize();
+//            var action = $('#frm_profile').attr('action');
+
+//            var $form = $(this);
+//            $.ajax({
+//                url: action,
+//                type: "POST",
+//                data: data,
+//                
+//                success: function () {
+//                    $form.removeAttr("disabled");
+//                    resetForm();
+//                    //displayConfirmDialog();
+//                    //$('#error-html').empty();
+//                },
+//                error: function () {
+//                    $form.removeAttr("disabled");
+//                    //displayErrorDialog();
+//                    //$('#error-html').empty();
+
+//                }
+//            });
+//        }
+    //    });
+
+    $(document).ready(function () {
+        var form = document.getElementById('frm_profile');
+        $('#formSubmit').on('click', function () {
+            debugger;
+            var fileInput = document.getElementById('file');
+            var name = document.getElementById('Name');
+            var file = fileInput.files[0];
+
+            var formData = new FormData(form);
+            formData.append('Image', file);
+            formData.append('Name', name);
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('POST', form.getAttribute('action'), true);
+            xhr.send(formData);
+
+            return false;
+        });
+    });
+</script>

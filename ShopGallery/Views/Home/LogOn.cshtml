@@ -1,0 +1,126 @@
+﻿@model ShopGallery.Models.Login
+
+@{
+    ViewBag.Title = "LogOn";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    //Layout = "~/Views/Shared/MasterPage.Master";
+}
+
+<h2>LogOn</h2>
+
+
+<asp:Content ID="Content1"  ContentPlaceHolderID="TitleContent" runat="server">
+    LogOn
+</asp:Content>
+<asp:Content ID="Content2"  ContentPlaceHolderID="MainContent" runat="server">
+     <style type="text/css">
+         .but {
+ 
+             text-shadow:5px 5px 2px blue;
+         }
+         .btnStyle
+         {
+            border: thin solid #000000;
+            line-height:  normal;
+            width: 80px;
+         }
+         .alignR {
+             text-align:center;
+         }
+          .alignL {
+             text-align:center;
+         }
+           .alignC {
+             text-align:center;
+         }
+         .showCat {
+             border-radius:5px;
+             font-family:Andalus;
+             color:blue;
+             position:relative;
+             left:200px;
+             bottom:300px;
+         }
+     </style>
+
+     @using (Html.BeginForm("LogOn", "Home",  FormMethod.Post)) 
+     { 
+     
+
+     <div class="fontStyle">      
+            <table style="margin-top: 100px;margin-left:150px">
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            <asp:Image ID="Image1" runat="server" 
+                                 ImageUrl="~/Content/Multi_purpose.png" Width="250px" />
+                            <hr />
+                        </div>
+                    </td>
+                </tr>
+
+                <tr style="height:30px">
+                    <td class="alignR">
+
+                        @Html.LabelFor(m => m.EmailId) 
+
+                    </td>
+
+                    <td style="width:200px" class="alignR">
+
+                        @Html.TextBoxFor(m => m.EmailId)
+
+                    </td>
+
+                    <td style="width:250px;color:Red" class="alignL">
+
+                        @Html.ValidationMessageFor(m => m.EmailId)
+
+                    </td>
+
+                </tr>
+
+                <tr style="height:30px">
+
+                    <td class="alignR">
+
+                        @Html.LabelFor(m => m.Password)
+
+                    </td>
+
+                    <td class="alignR">
+
+                        @Html.PasswordFor(m => m.Password)
+
+                    </td>
+
+                    <td style="width:250px;color:Red" class="alignL">
+
+                        @Html.ValidationMessageFor(m => m.Password)
+
+                    </td>
+                </tr>
+
+                <tr style="height:30px">
+                    <td colspan="2" class="alignC">
+
+                        <input type="submit" value="Sign In" class="btnStyle" />
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="color:Red;" class="alignL">
+
+                        @Html.ValidationSummary(true)
+
+                    </td>
+                </tr>
+            </table>   
+         <input type="button"class="but" value="Register" onclick="location.href='/User/Create'" >  
+         <input type="button" class="showCat" value="Show Categories" onclick="location.href = '/Product/ShowCategories'" />
+   
+     </div>
+     } 
+
+</asp:Content>

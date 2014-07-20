@@ -1,0 +1,49 @@
+﻿@model IEnumerable<DAL.OrderDetail>
+
+@{
+    ViewBag.Title = "ShowOrderDetails";
+}
+
+<h2>ShowOrderDetails</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Show","Product")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailableQTY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvailableQTY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+    </tr>
+}
+   
+</table>
+ <hr/>
+     @Html.ActionLink("Back to List", "ShowOrders")
+    <hr />

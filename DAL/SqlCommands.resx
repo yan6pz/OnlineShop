@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CREATE_ORDER" xml:space="preserve">
+    <value>insert into Orders(UserID,Price,OrderDate,Quantity,ProductID) values(@userId,@price,@date,@qty,@productId)</value>
+  </data>
+  <data name="CREATE_ORDERDETAILS" xml:space="preserve">
+    <value>insert into OrderDetails(OrderID,ProductID,Price,AvailableQTY) values(@orderId,@productId,@price,@qty)</value>
+  </data>
+  <data name="CREATE_PRODUCT" xml:space="preserve">
+    <value>Insert into Products (Name,Color,UnitPrice,Size,Weight,IsDiscounted,SubcategoryID,Image) values (@newName,@newColor,@newUP,@size,@newWeight,@discount,@subcatID,@image)</value>
+  </data>
+  <data name="CURRENT_USER" xml:space="preserve">
+    <value>select * from Users where Email=@id</value>
+  </data>
+  <data name="DELETE_FROM_SUBCATEGORIES" xml:space="preserve">
+    <value>delete from Subcategories where ProductID=@id</value>
+  </data>
+  <data name="DELETE_ORDERDETAILS" xml:space="preserve">
+    <value>delete from OrderDetails where OrderID=@idOd</value>
+  </data>
+  <data name="DELETE_ORDERS" xml:space="preserve">
+    <value>delete from Orders where OrderID=@idO</value>
+  </data>
+  <data name="DELETE_PRODUCT" xml:space="preserve">
+    <value>delete from Products where ProductID=@id</value>
+  </data>
+  <data name="GETPRODUCT_ORDER" xml:space="preserve">
+    <value>select Name,UnitPrice,ProductID from Products where ProductID=@id</value>
+  </data>
+  <data name="GET_ORDERID" xml:space="preserve">
+    <value>SELECT TOP 1 OrderID FROM Orders ORDER BY OrderID DESC</value>
+  </data>
+  <data name="SHOW_PRODUCTS" xml:space="preserve">
+    <value>select * from Products</value>
+  </data>
+  <data name="SHOW_USER_ORDERDETAILS" xml:space="preserve">
+    <value>select OrderDetails.OrderID,Products.Name,OrderDetails.Price,OrderDetails.AvailableQTY from OrderDetails join Orders on Orders.OrderID=OrderDetails.OrderID join Products on OrderDetails.ProductID=Products.ProductID where Orders.UserID=@id</value>
+  </data>
+  <data name="SHOW_USER_ORDERS" xml:space="preserve">
+    <value>select OrderID,Price,OrderDate,Quantity from Orders join Users on Users.UserID=Orders.UserID where Users.Email=@id</value>
+  </data>
+  <data name="UPDATE_PRODUCT_color" xml:space="preserve">
+    <value>Update Products set Color=@newColor where ProductID=@idC </value>
+  </data>
+  <data name="UPDATE_PRODUCT_name" xml:space="preserve">
+    <value>Update Products set Name=@newName where ProductID=@idN </value>
+  </data>
+  <data name="UPDATE_PRODUCT_price" xml:space="preserve">
+    <value>Update Products set UnitPrice=@newUP where ProductID=@idP </value>
+  </data>
+  <data name="UPDATE_PRODUCT_size" xml:space="preserve">
+    <value>Update Products set Size=@newSize where ProductID=@idS </value>
+  </data>
+  <data name="UPDATE_PRODUCT_weight" xml:space="preserve">
+    <value>Update Products set Weight=@newWeight where ProductID=@idW </value>
+  </data>
+</root>

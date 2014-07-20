@@ -1,0 +1,34 @@
+﻿@model ShopGallery.Models.Login
+
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <style>
+        .but {
+            font-size:1.3em;
+            box-shadow:rgb(0, 148, 255) 5px 5px;
+            color:blue;
+        }
+    </style>
+</head>
+    
+<body>
+
+    <div>
+        <input type="button" class="but" value="Show Products" onclick="location.href='/Product/Show'" >
+        <input type="button" class="but" value="Show Orders" onclick="location.href = '/Order/ShowOrders'" />
+        <input type="button" class="but" value="Show Categories" onclick="location.href = '/Product/ShowCategories'" />
+        @if (bool.Parse(Session["IsAdmin"].ToString()))
+        {
+          <input type="button" class="but" value="Show Users" onclick="location.href = '/User/ShowUsers'" />
+        }
+    </div>
+</body>
+</html>

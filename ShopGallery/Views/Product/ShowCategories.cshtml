@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ShopGallery.Models.Category>
+
+@{
+    ViewBag.Title = "ShowCategories";
+}
+
+<h2>ShowCategories</h2>
+@foreach (var cat in Model)
+{
+   
+    @Html.ActionLink(@cat.CategoryName, "ShowSubcategories", "Product", new { ID = @cat.CategoryID }, null);
+}

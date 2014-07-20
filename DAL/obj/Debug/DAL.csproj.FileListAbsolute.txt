@@ -1,0 +1,7 @@
+D:\C#\projects\ShopGallery\ShopGallery\DAL\bin\Debug\DAL.dll
+D:\C#\projects\ShopGallery\ShopGallery\DAL\bin\Debug\DAL.pdb
+D:\C#\projects\ShopGallery\ShopGallery\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\C#\projects\ShopGallery\ShopGallery\DAL\obj\Debug\DAL.SqlCommands.resources
+D:\C#\projects\ShopGallery\ShopGallery\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+D:\C#\projects\ShopGallery\ShopGallery\DAL\obj\Debug\DAL.dll
+D:\C#\projects\ShopGallery\ShopGallery\DAL\obj\Debug\DAL.pdb

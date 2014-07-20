@@ -1,0 +1,68 @@
+﻿@model ShopGallery.Models.Product
+
+@{
+    ViewBag.Title = "ShowProductWithImage";
+}
+@{
+  var base64 = Convert.ToBase64String(Model.ImageProduct );
+    var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+}
+<h2>ShowProductWithImage</h2>
+
+<fieldset>
+    <legend>Product</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Color)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Color)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UnitPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UnitPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Size)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Size)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Weight)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Weight)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsDiscounted)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsDiscounted)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SubcategoryID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SubcategoryID)
+    </div>
+       <img src="@imgSrc" />
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

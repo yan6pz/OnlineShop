@@ -1,0 +1,37 @@
+﻿<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+@*<link rel="SHORTCUT ICON" href="@Url.Content("~Images/favicon.ico")"/>*@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+               
+            </p>
+        </div>
+    </section>
+}
+<input type="submit" value="LogOn" onclick="location.href = '/Home/LogOn'" />
+<input type="submit" value="Register" onclick="location.href='/User/Create'" >
+<h3>We suggest the following:</h3>
+<ol class="round">
+    <li class="one">
+        <h5>Getting Started</h5>
+        
+    </li>
+
+    <li class="two">
+
+    </li>
+
+    <li class="three">
+        <h5>Find Web Hosting</h5>
+
+    </li>
+</ol>

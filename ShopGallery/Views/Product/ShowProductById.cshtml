@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ShopGallery.Models.Product>
+
+@{
+    ViewBag.Title = "ShowProductById";
+}
+
+<h2>ShowProductById</h2>
+<style>
+    td {
+        margin-right:30px;
+    }
+    b {
+        margin:5px;
+    }
+    table {
+        border:2px solid black;
+    }
+</style>
+
+
+    <b>Name</b><b>Color</b><b>Unit Price</b><b>Size</b><b>Weight</b><b>Is Discounted</b>
+    <br />
+    @foreach (var item in Model) {
+        <style>
+
+        </style>
+<table>
+    <tr>
+        <td >
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsDiscounted)
+        </td>     
+        <td>
+            @if (bool.Parse(Session["IsAdmin"].ToString()))
+            {
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductID })
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductID })
+            }
+        </td>
+        </tr>
+    </table>
+        <br />
+}
+
+
+<p>
+    @Html.ActionLink("Back to List", "ShowCategories")
+</p>

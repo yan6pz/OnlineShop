@@ -1,0 +1,16 @@
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\Probe.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\Probe.pdb
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\ShopGallery.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\System.Web.Optimization.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\System.Web.Http.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\System.Web.Http.WebHost.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\System.Net.Http.Formatting.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\Newtonsoft.Json.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\ShopGallery.pdb
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\System.Web.Http.xml
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\System.Web.Http.WebHost.xml
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\System.Net.Http.Formatting.xml
+D:\C#\projects\ShopGallery\ShopGallery\Probe\bin\Debug\Newtonsoft.Json.xml
+D:\C#\projects\ShopGallery\ShopGallery\Probe\obj\Debug\Probe.csprojResolveAssemblyReference.cache
+D:\C#\projects\ShopGallery\ShopGallery\Probe\obj\Debug\Probe.dll
+D:\C#\projects\ShopGallery\ShopGallery\Probe\obj\Debug\Probe.pdb

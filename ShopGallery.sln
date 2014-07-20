@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopGallery", "ShopGallery\ShopGallery.csproj", "{984F7629-375E-494D-841E-65FADFF3AD62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "Probe\BusinessLayer.csproj", "{1B2C0B52-B1C3-4CFF-A049-0E80C6B4B4F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{4F260DEB-D073-449F-9C82-6C59F4894873}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{984F7629-375E-494D-841E-65FADFF3AD62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984F7629-375E-494D-841E-65FADFF3AD62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984F7629-375E-494D-841E-65FADFF3AD62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984F7629-375E-494D-841E-65FADFF3AD62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2C0B52-B1C3-4CFF-A049-0E80C6B4B4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2C0B52-B1C3-4CFF-A049-0E80C6B4B4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2C0B52-B1C3-4CFF-A049-0E80C6B4B4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2C0B52-B1C3-4CFF-A049-0E80C6B4B4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F260DEB-D073-449F-9C82-6C59F4894873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F260DEB-D073-449F-9C82-6C59F4894873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F260DEB-D073-449F-9C82-6C59F4894873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F260DEB-D073-449F-9C82-6C59F4894873}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
