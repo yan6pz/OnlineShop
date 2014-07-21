@@ -8,7 +8,6 @@ namespace ShopGallery.Models
 {
     public class OrderDetail
     {
-        public static string connString = @"Data Source=.;Initial Catalog=OnlineShop;Integrated Security=True";
 
 
         public OrderDetail(int orderId, string prodName, decimal price, int qty)

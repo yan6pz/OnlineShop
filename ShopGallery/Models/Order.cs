@@ -9,7 +9,7 @@ namespace ShopGallery.Models
     public class Order
     {
         List<OrderDetail> details = new List<OrderDetail>();
-        public static string connString = @"Data Source=.;Initial Catalog=OnlineShop;Integrated Security=True";
+       
         public static int currUser = 0;
         public static bool isCurrUserAdmin = false;
 
